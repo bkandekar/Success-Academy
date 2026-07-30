@@ -1,0 +1,6 @@
+{
+  "name": "Success Academy",
+  "description": "Official mobile app for Success Academy Coaching Classes, Kolhapur. Courses, Batch Estimator, Results & WhatsApp Counselling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

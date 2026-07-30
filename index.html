@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Academy Coaching Classes | Station Road, Kolhapur</title>
+    <meta name="description" content="Official website for Success Academy Coaching Classes, 201 Shree Plaza, Station Road Kolhapur. SSC CGL, MPSC, UPSC, IBPS PO, RRB NTPC, NDA & Railway Exams Coaching by Rahul Patil.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Theme Switcher Header Bar -->
+    <div class="theme-selector-bar">
+        <span><i class="fa-solid fa-palette"></i> Choose UI Theme Style:</span>
+        <div class="theme-options">
+            <button class="theme-switch-btn active" data-theme="classic" onclick="switchTheme('classic')">Navy Gold</button>
+            <button class="theme-switch-btn" data-theme="modern-gold" onclick="switchTheme('modern-gold')">Dark Slate</button>
+            <button class="theme-switch-btn" data-theme="emerald-pro" onclick="switchTheme('emerald-pro')">Emerald Pro</button>
+        </div>
+    </div>
+
+    <!-- Header Navigation Bar -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-badge">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div class="brand-info">
+                    <span class="brand-name">Success Academy</span>
+                    <span class="brand-sub">Kolhapur • Station Road</span>
+                </div>
+            </a>
+            <div class="header-actions">
+                <a href="tel:9067257872" class="btn-icon-call" title="Call Success Academy">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+                <button class="btn-primary-gold" onclick="openEnquiryModal()">
+                    <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="section-container">
+                <div class="hero-tag-badge">
+                    <i class="fa-solid fa-star"></i> #1 Coaching Institute in Kolhapur & Western MH
+                </div>
+                <h1 class="hero-tagline">Your Dream. Our Mission.</h1>
+                <h2 class="hero-headline">Empowering Govt Exam Aspirants with Result-Oriented Coaching</h2>
+                <p class="hero-description">
+                    Specialized Offline, Online & Hybrid coaching for SSC CGL, MPSC, UPSC, IBPS PO, RRB NTPC, NDA & Railway exams. Guided by Director Rahul Patil in Kolhapur.
+                </p>
+
+                <!-- Hero Feature Banner -->
+                <div class="hero-banner-card">
+                    <div class="banner-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div class="banner-text">
+                        <h3><i class="fa-solid fa-circle-check"></i> 420+ Govt Selections</h3>
+                        <p>Proven track record in MPSC, SSC, Banking & Railway since 2014.</p>
+                        <span class="location-tag"><i class="fa-solid fa-location-dot"></i> 201 Shree Plaza, Station Road, Kolhapur</span>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta-group">
+                    <button class="btn-hero-primary" onclick="openEnquiryModal()">
+                        <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                    </button>
+                    <button class="btn-hero-outline" onclick="scrollToSection('estimator-section')">
+                        <i class="fa-solid fa-calculator"></i> Fee Estimator
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-value">8,500+</span>
+                    <span class="stat-label">Students Guided</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">420+</span>
+                    <span class="stat-label">Selections</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">12+</span>
+                    <span class="stat-label">Years Exp</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">9</span>
+                    <span class="stat-label">Exam Courses</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pain Points vs Solutions -->
+        <section class="section-padding bg-light">
+            <div class="section-container">
+                <span class="section-overline">WHY ASPIRANTS CHOOSE US</span>
+                <h2 class="section-title">Common Student Struggles vs Success Academy Advantage</h2>
+                <p class="section-subtitle">We eliminated traditional coaching flaws to deliver maximum selection rates in Kolhapur.</p>
+
+                <div class="pain-points-grid">
+                    <div class="pain-card">
+                        <div class="pain-header">
+                            <i class="fa-solid fa-users"></i>
+                            <h3>Limited Batch Size (Max 35)</h3>
+                        </div>
+                        <div class="box-struggle">
+                            <strong><i class="fa-solid fa-circle-xmark"></i> Typical Coaching: Overcrowded Classrooms</strong>
+                            <p>Drowning in huge batches with 200+ students where teachers can't clear individual doubts.</p>
+                        </div>
+                        <div class="box-solution">
+                            <strong><i class="fa-solid fa-circle-check"></i> Success Academy Solution:</strong>
+                            <p>Personalized focus for every student with dedicated 1-on-1 doubt clearing after every lecture.</p>
+                        </div>
+                    </div>
+
+                    <div class="pain-card">
+                        <div class="pain-header">
+                            <i class="fa-solid fa-book-open"></i>
+                            <h3>Latest Pattern Test Series</h3>
+                        </div>
+                        <div class="box-struggle">
+                            <strong><i class="fa-solid fa-circle-xmark"></i> Typical Coaching: Outdated Study Material</strong>
+                            <p>Studying old patterns and irrelevant questions that waste precious preparation time.</p>
+                        </div>
+                        <div class="box-solution">
+                            <strong><i class="fa-solid fa-circle-check"></i> Success Academy Solution:</strong>
+                            <p>Updated 2026 pattern test series, daily current affairs booklets, and 10-year topicwise papers.</p>
+                        </div>
+                    </div>
+
+                    <div class="pain-card">
+                        <div class="pain-header">
+                            <i class="fa-solid fa-clock"></i>
+                            <h3>Hybrid Flexibility (Online + Offline)</h3>
+                        </div>
+                        <div class="box-struggle">
+                            <strong><i class="fa-solid fa-circle-xmark"></i> Typical Coaching: Inflexible Timings</strong>
+                            <p>Missing lectures due to college or job schedules with no backup or recorded sessions.</p>
+                        </div>
+                        <div class="box-solution">
+                            <strong><i class="fa-solid fa-circle-check"></i> Success Academy Solution:</strong>
+                            <p>Attend live offline classes or stream online with 24/7 app access to recorded lectures & notes.</p>
+                        </div>
+                    </div>
+
+                    <div class="pain-card">
+                        <div class="pain-header">
+                            <i class="fa-solid fa-brain"></i>
+                            <h3>Direct Mentorship by Rahul Patil</h3>
+                        </div>
+                        <div class="box-struggle">
+                            <strong><i class="fa-solid fa-circle-xmark"></i> Typical Coaching: Lack of Exam Strategy</strong>
+                            <p>Knowing concept basics but struggling with time management and negative marking.</p>
+                        </div>
+                        <div class="box-solution">
+                            <strong><i class="fa-solid fa-circle-check"></i> Success Academy Solution:</strong>
+                            <p>Master short-cut tricks, speed math techniques, and custom study planners by experienced toppers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Fee & Batch Estimator Section -->
+        <section id="estimator-section" class="section-padding bg-navy">
+            <div class="section-container">
+                <span class="section-overline gold">COURSE FEE & BATCH ESTIMATOR</span>
+                <h2 class="section-title text-white">Calculate Your Estimated Investment</h2>
+                <p class="section-subtitle text-muted">Select your target exam, batch mode, and duration for an instant fee estimate.</p>
+
+                <div class="estimator-card">
+                    <!-- Step 1: Select Exam -->
+                    <div class="estimator-group">
+                        <label class="form-label">1. Select Target Exam / Course:</label>
+                        <select id="estimator-course-select" class="form-select" onchange="calculateFee()">
+                            <!-- Populated via JS -->
+                        </select>
+                    </div>
+
+                    <!-- Step 2: Batch Mode -->
+                    <div class="estimator-group">
+                        <label class="form-label">2. Preferred Batch Mode:</label>
+                        <div class="segmented-control" id="mode-control">
+                            <button class="segment-btn" data-mode="ONLINE" onclick="setMode('ONLINE')">Online</button>
+                            <button class="segment-btn active" data-mode="OFFLINE" onclick="setMode('OFFLINE')">Offline</button>
+                            <button class="segment-btn" data-mode="HYBRID" onclick="setMode('HYBRID')">Hybrid</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Duration -->
+                    <div class="estimator-group">
+                        <label class="form-label">3. Duration Program:</label>
+                        <div class="segmented-control" id="duration-control">
+                            <button class="segment-btn" data-duration="THREE" onclick="setDuration('THREE')">3 Months</button>
+                            <button class="segment-btn active" data-duration="SIX" onclick="setDuration('SIX')">6 Months</button>
+                            <button class="segment-btn" data-duration="TWELVE" onclick="setDuration('TWELVE')">12 Months</button>
+                        </div>
+                    </div>
+
+                    <!-- Result Box -->
+                    <div class="fee-display-box">
+                        <span class="fee-caption">ESTIMATED COURSE FEE RANGE</span>
+                        <div id="fee-amount" class="fee-amount">₹13,500 – ₹16,500</div>
+                        <span class="fee-note"><i class="fa-solid fa-circle-info"></i> *Final fee confirmed after 1-on-1 counseling session.</span>
+                    </div>
+
+                    <button class="btn-hero-primary full-width" onclick="enquireCurrentEstimatorBatch()">
+                        <i class="fa-solid fa-paper-plane"></i> Enquire About Selected Batch
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Catalog -->
+        <section class="section-padding bg-light">
+            <div class="section-container">
+                <span class="section-overline">OUR EXAM PROGRAMS</span>
+                <h2 class="section-title">Targeted Coaching Courses & Batches</h2>
+                <p class="section-subtitle">Designed according to 2026 updated exam patterns with regular test series.</p>
+
+                <!-- Filter Tabs -->
+                <div class="filter-tabs" id="category-filter-tabs">
+                    <button class="tab-btn active" onclick="filterCategory('All')">All</button>
+                    <button class="tab-btn" onclick="filterCategory('Staff Selection')">Staff Selection</button>
+                    <button class="tab-btn" onclick="filterCategory('Civil Services')">Civil Services</button>
+                    <button class="tab-btn" onclick="filterCategory('Banking & Finance')">Banking & Finance</button>
+                    <button class="tab-btn" onclick="filterCategory('Defense & Railway')">Defense & Railway</button>
+                </div>
+
+                <!-- Course Cards Grid -->
+                <div class="courses-grid" id="courses-grid">
+                    <!-- Populated via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Exam Features Comparison Matrix -->
+        <section class="section-padding bg-light" style="padding-top:0;">
+            <div class="section-container">
+                <span class="section-overline">QUICK COMPARISON</span>
+                <h2 class="section-title">Government Exam Comparison Matrix</h2>
+                <p class="section-subtitle">Understand key details to select the best exam for your career background.</p>
+
+                <div class="comparison-table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Exam Name</th>
+                                <th>Qualification</th>
+                                <th>Age Limit</th>
+                                <th>Selection Stages</th>
+                                <th>Batch Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>SSC CGL</strong></td>
+                                <td>Graduate (Any Stream)</td>
+                                <td>18 - 32 Yrs</td>
+                                <td>Tier I + Tier II</td>
+                                <td>6 Months</td>
+                            </tr>
+                            <tr>
+                                <td><strong>MPSC Rajyaseva</strong></td>
+                                <td>Graduate</td>
+                                <td>19 - 38 Yrs</td>
+                                <td>Prelims + Mains + Interview</td>
+                                <td>12 Months</td>
+                            </tr>
+                            <tr>
+                                <td><strong>UPSC IAS/IPS</strong></td>
+                                <td>Graduate</td>
+                                <td>21 - 32 Yrs</td>
+                                <td>Prelims + Mains + Interview</td>
+                                <td>15 Months</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IBPS PO / SBI PO</strong></td>
+                                <td>Graduate</td>
+                                <td>20 - 30 Yrs</td>
+                                <td>Prelims + Mains + Interview</td>
+                                <td>4 Months</td>
+                            </tr>
+                            <tr>
+                                <td><strong>RRB NTPC</strong></td>
+                                <td>12th / Graduate</td>
+                                <td>18 - 33 Yrs</td>
+                                <td>CBT 1 + CBT 2</td>
+                                <td>4 Months</td>
+                            </tr>
+                            <tr>
+                                <td><strong>NDA / CDS</strong></td>
+                                <td>12th / Graduate</td>
+                                <td>16.5 - 24 Yrs</td>
+                                <td>Written Test + SSB Interview</td>
+                                <td>6 Months</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Faculty Section -->
+        <section class="section-padding bg-light">
+            <div class="section-container">
+                <span class="section-overline">EXPERT MENTORS & FACULTY</span>
+                <h2 class="section-title">Learn From Experienced Topper Mentors</h2>
+                <p class="section-subtitle">Direct guidance by Founder Rahul Patil and subject matter specialists with 8+ years of teaching expertise.</p>
+
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <div class="faculty-header">
+                            <div class="avatar-circle"><i class="fa-solid fa-user-tie"></i></div>
+                            <div>
+                                <h3>Rahul Patil <span class="badge-founder">Founder</span></h3>
+                                <span class="faculty-role">Managing Director & Chief Mentor</span>
+                                <div class="faculty-subject"><i class="fa-solid fa-star"></i> GS & Aptitude Strategy • 12+ Yrs Exp</div>
+                            </div>
+                        </div>
+                        <p class="faculty-bio">Mentored over 8,500+ government job aspirants across Maharashtra. Expert in GS paper structuring, interview guidance, and speed aptitude shortcuts.</p>
+                        <div class="faculty-achievement"><i class="fa-solid fa-id-card"></i> 420+ Selections under direct guidance • MPSC & UPSC Subject Specialist</div>
+                    </div>
+
+                    <div class="faculty-card">
+                        <div class="faculty-header">
+                            <div class="avatar-circle"><i class="fa-solid fa-user-graduate"></i></div>
+                            <div>
+                                <h3>Prof. Sneha Deshmukh</h3>
+                                <span class="faculty-role">Senior Mathematics Faculty</span>
+                                <div class="faculty-subject"><i class="fa-solid fa-star"></i> Quant & Advanced Math • 9+ Yrs Exp</div>
+                            </div>
+                        </div>
+                        <p class="faculty-bio">Renowned for shortcut formulas and Vedic math methods that cut calculation time by 60% in SSC & Banking competitive exams.</p>
+                        <div class="faculty-achievement"><i class="fa-solid fa-id-card"></i> Ex-Banking Officer • Author of 'Speed Maths for Competitive Exams'</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Toppers Section -->
+        <section class="section-padding bg-navy">
+            <div class="section-container">
+                <span class="section-overline gold">PROUD TOPPERS & SELECTIONS</span>
+                <h2 class="section-title text-white">420+ Students in Government Service</h2>
+                <p class="section-subtitle text-muted">Our toppers cleared premier exams like SSC CGL, MPSC State Services, IBPS PO & RRB NTPC.</p>
+
+                <div class="toppers-grid">
+                    <div class="topper-card">
+                        <div class="topper-header">
+                            <div class="topper-avatar"><i class="fa-solid fa-trophy"></i></div>
+                            <div class="topper-info">
+                                <h3>Akash Kulkarni</h3>
+                                <span class="topper-post">Income Tax Inspector (2025)</span>
+                                <span class="topper-meta"><i class="fa-solid fa-location-dot"></i> SSC CGL 2025 • Kolhapur</span>
+                            </div>
+                            <div class="rank-badge">AIR 14</div>
+                        </div>
+                        <p class="topper-quote">"Success Academy's daily mock tests and Rahul Sir's shortcut techniques were the game changer in my 1st attempt selection!"</p>
+                    </div>
+
+                    <div class="topper-card">
+                        <div class="topper-header">
+                            <div class="topper-avatar"><i class="fa-solid fa-trophy"></i></div>
+                            <div class="topper-info">
+                                <h3>Pooja Patil</h3>
+                                <span class="topper-post">Dy. Collector Class 1 (2025)</span>
+                                <span class="topper-meta"><i class="fa-solid fa-location-dot"></i> MPSC State Services • Ichalkaranji</span>
+                            </div>
+                            <div class="rank-badge">Rank 8</div>
+                        </div>
+                        <p class="topper-quote">"The personal answer writing evaluation and guidance by Success Academy faculty made all the difference in Mains."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section-padding bg-light">
+            <div class="section-container">
+                <span class="section-overline">FREQUENTLY ASKED QUESTIONS</span>
+                <h2 class="section-title">Got Questions? We Have Answers.</h2>
+                <p class="section-subtitle">Find clarity regarding batches, fees, hostel guidance, and exam guidance.</p>
+
+                <div class="faq-list">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <span>Where is Success Academy located in Kolhapur?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            We are located at 201, Shree Plaza, Station Road, Kolhapur (Maharashtra 416003). Conveniently accessible from Kolhapur Railway Station and Bus Stand.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Are demo classes available before taking admission?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes! We offer 2 days free demo classes for all new batches so you can experience our teaching methodology firsthand.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I join online if I cannot attend offline classes in Kolhapur?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Absolutely! Our Hybrid and Online batches feature live stream lectures, daily lecture recordings, and downloadable PDF study notes accessible anytime via mobile app.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is hostel / mess assistance provided for outstation students?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, we assist students coming from Sangli, Satara, Ichalkaranji, and nearby regions with verified student hostel and mess contacts near Station Road.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Banner -->
+        <section class="cta-banner">
+            <div class="section-container">
+                <span class="section-overline gold">LIMITED SEATS AVAILABLE PER BATCH</span>
+                <h2 class="cta-heading">Enroll for the Next Batch Today!</h2>
+                <p class="cta-desc">Take the first step towards your government job career with Kolhapur's most trusted faculty team.</p>
+                <div class="cta-actions">
+                    <button class="btn-hero-primary" onclick="openEnquiryModal()">
+                        <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                    </button>
+                    <a href="tel:9067257872" class="btn-hero-outline">
+                        <i class="fa-solid fa-phone"></i> Call 9067257872
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <h2 class="footer-brand">Success Academy Coaching Classes</h2>
+            <p class="footer-owner">Owner / Director: Rahul Patil</p>
+            
+            <div class="footer-info-group">
+                <p><i class="fa-solid fa-location-dot"></i> <strong>Academy Address:</strong> 201, Shree Plaza, Station Road, Kolhapur, Maharashtra 416003</p>
+                <p><i class="fa-solid fa-map-pin"></i> <strong>Service Areas:</strong> Kolhapur, Ichalkaranji, Sangli, Satara</p>
+                <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> 9067257872 | <strong>WhatsApp:</strong> +918329931123</p>
+                <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> info@successacademy.in</p>
+            </div>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=201+Shree+Plaza+Station+Road+Kolhapur+Maharashtra+416003" target="_blank" class="btn-map">
+                <i class="fa-solid fa-map-location-dot"></i> Open Station Road Center in Google Maps
+            </a>
+
+            <hr class="footer-divider">
+
+            <p class="credit-line">Website by ebookcharm Web Services</p>
+        </div>
+    </footer>
+
+    <!-- Enquiry Modal Dialog -->
+    <div id="enquiry-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-overline">OFFICIAL ENQUIRY FORM</span>
+                    <h3 class="modal-title">Success Academy Kolhapur</h3>
+                </div>
+                <button class="btn-close" onclick="closeEnquiryModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <form id="enquiry-form" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" id="input-name" placeholder="e.g. Rahul Patil" required>
+                    <span id="name-error" class="error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number (WhatsApp) *</label>
+                    <input type="tel" id="input-phone" placeholder="e.g. 9067257872" required>
+                    <span id="phone-error" class="error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Exam / Course Interested In</label>
+                    <select id="input-course">
+                        <!-- Populated via JS -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Batch Mode</label>
+                    <select id="input-mode">
+                        <option value="Offline">Offline</option>
+                        <option value="Online">Online</option>
+                        <option value="Hybrid">Hybrid</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Qualification / Current Year</label>
+                    <select id="input-qualification">
+                        <option value="Graduate">Graduate</option>
+                        <option value="12th Pass">12th Pass</option>
+                        <option value="Final Year Student">Final Year Student</option>
+                        <option value="Post Graduate">Post Graduate</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Additional Notes (Optional)</label>
+                    <textarea id="input-notes" rows="2" placeholder="e.g. Interested in hostel facility or weekend batches"></textarea>
+                </div>
+
+                <button type="submit" class="btn-whatsapp-submit">
+                    <i class="fa-brands fa-whatsapp"></i> Submit & Connect on WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Course Detail Modal Dialog -->
+    <div id="course-modal" class="modal-overlay">
+        <div class="modal-card" id="course-modal-content">
+            <!-- Populated via JS -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
