@@ -1,5 +1,17 @@
 /* Success Academy Coaching Classes Interactivity & UI Script */
 
+/**
+ * ==========================================================================
+ * RULE 1 — SINGLE SOURCE OF TRUTH FOR BUSINESS CONTACT INFO
+ * All interactive booking/dialer code pulls strictly from this single object.
+ * ==========================================================================
+ */
+const BUSINESS_CONFIG = {
+    phone: "9067257872",
+    whatsapp: "918329931123",
+    businessName: "Success Academy Coaching Classes"
+};
+
 // Course Data Source
 const coursesData = [
     {
@@ -431,9 +443,10 @@ function handleFormSubmit(e) {
 
     if (!valid) return;
 
-    const message = `Hello Success Academy (Rahul Patil Sir), I want to enquire for coaching.%0A%0A*Full Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Course:* ${encodeURIComponent(course)}%0A*Batch Mode:* ${encodeURIComponent(mode)}%0A*Qualification:* ${encodeURIComponent(qual)}%0A*Notes:* ${encodeURIComponent(notes)}`;
+    // Message greeting and WhatsApp number both pull from BUSINESS_CONFIG (Rule 1)
+    const message = `Hello ${BUSINESS_CONFIG.businessName} (Rahul Patil Sir), I want to enquire for coaching.%0A%0A*Full Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Course:* ${encodeURIComponent(course)}%0A*Batch Mode:* ${encodeURIComponent(mode)}%0A*Qualification:* ${encodeURIComponent(qual)}%0A*Notes:* ${encodeURIComponent(notes)}`;
 
-    const whatsappUrl = `https://wa.me/918329931123?text=${message}`;
+    const whatsappUrl = `https://wa.me/${BUSINESS_CONFIG.whatsapp}?text=${message}`;
 
     window.open(whatsappUrl, "_blank");
     closeEnquiryModal();
