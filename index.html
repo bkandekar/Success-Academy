@@ -39,6 +39,7 @@
                 </div>
             </a>
             <div class="header-actions">
+                <!-- BUSINESS CONTACT — must match BUSINESS_CONFIG in script.js -->
                 <a href="tel:9067257872" class="btn-icon-call" title="Call Success Academy">
                     <i class="fa-solid fa-phone"></i>
                 </a>
@@ -54,36 +55,48 @@
 
         <!-- Hero Section -->
         <section class="hero-section">
-            <div class="section-container">
-                <div class="hero-tag-badge">
-                    <i class="fa-solid fa-star"></i> #1 Coaching Institute in Kolhapur & Western MH
-                </div>
-                <h1 class="hero-tagline">Your Dream. Our Mission.</h1>
-                <h2 class="hero-headline">Empowering Govt Exam Aspirants with Result-Oriented Coaching</h2>
-                <p class="hero-description">
-                    Specialized Offline, Online & Hybrid coaching for SSC CGL, MPSC, UPSC, IBPS PO, RRB NTPC, NDA & Railway exams. Guided by Director Rahul Patil in Kolhapur.
-                </p>
-
-                <!-- Hero Feature Banner -->
-                <div class="hero-banner-card">
-                    <div class="banner-icon">
-                        <i class="fa-solid fa-award"></i>
+            <div class="section-container hero-grid">
+                <div class="hero-text-col">
+                    <div class="hero-tag-badge">
+                        <i class="fa-solid fa-star"></i> #1 Coaching Institute in Kolhapur & Western MH
                     </div>
-                    <div class="banner-text">
-                        <h3><i class="fa-solid fa-circle-check"></i> 420+ Govt Selections</h3>
-                        <p>Proven track record in MPSC, SSC, Banking & Railway since 2014.</p>
-                        <span class="location-tag"><i class="fa-solid fa-location-dot"></i> 201 Shree Plaza, Station Road, Kolhapur</span>
+                    <h1 class="hero-tagline">Your Dream. Our Mission.</h1>
+                    <h2 class="hero-headline">Empowering Govt Exam Aspirants with Result-Oriented Coaching</h2>
+                    <p class="hero-description">
+                        Specialized Offline, Online & Hybrid coaching for SSC CGL, MPSC, UPSC, IBPS PO, RRB NTPC, NDA & Railway exams. Guided by Director Rahul Patil in Kolhapur.
+                    </p>
+
+                    <!-- Hero Feature Banner -->
+                    <div class="hero-banner-card">
+                        <div class="banner-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="banner-text">
+                            <h3><i class="fa-solid fa-circle-check"></i> 420+ Govt Selections</h3>
+                            <p>Proven track record in MPSC, SSC, Banking & Railway since 2014.</p>
+                            <span class="location-tag"><i class="fa-solid fa-location-dot"></i> 201 Shree Plaza, Station Road, Kolhapur</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta-group">
+                        <button class="btn-hero-primary" onclick="openEnquiryModal()">
+                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        </button>
+                        <button class="btn-hero-outline" onclick="scrollToSection('estimator-section')">
+                            <i class="fa-solid fa-calculator"></i> Fee Estimator
+                        </button>
                     </div>
                 </div>
 
-                <!-- CTA Buttons -->
-                <div class="hero-cta-group">
-                    <button class="btn-hero-primary" onclick="openEnquiryModal()">
-                        <i class="fa-solid fa-paper-plane"></i> Enquire Now
-                    </button>
-                    <button class="btn-hero-outline" onclick="scrollToSection('estimator-section')">
-                        <i class="fa-solid fa-calculator"></i> Fee Estimator
-                    </button>
+                <!-- Hero Image (Google AI Studio generated — replace file in /images/hero-banner.jpg) -->
+                <div class="hero-image-col">
+                    <img
+                        src="images/hero-banner.jpg"
+                        alt="Students attending a live coaching class at Success Academy, Station Road, Kolhapur"
+                        class="hero-img"
+                        data-placeholder-id="hero-image"
+                    >
                 </div>
             </div>
 
@@ -329,7 +342,12 @@
                 <div class="faculty-grid">
                     <div class="faculty-card">
                         <div class="faculty-header">
-                            <div class="avatar-circle"><i class="fa-solid fa-user-tie"></i></div>
+                            <img
+                                src="images/faculty-rahul-patil.jpg"
+                                alt="Rahul Patil, Founder and Chief Mentor at Success Academy"
+                                class="faculty-photo"
+                                data-placeholder-id="faculty-rahul-patil"
+                            >
                             <div>
                                 <h3>Rahul Patil <span class="badge-founder">Founder</span></h3>
                                 <span class="faculty-role">Managing Director & Chief Mentor</span>
@@ -342,7 +360,12 @@
 
                     <div class="faculty-card">
                         <div class="faculty-header">
-                            <div class="avatar-circle"><i class="fa-solid fa-user-graduate"></i></div>
+                            <img
+                                src="images/faculty-sneha-deshmukh.jpg"
+                                alt="Prof. Sneha Deshmukh, Senior Mathematics Faculty at Success Academy"
+                                class="faculty-photo"
+                                data-placeholder-id="faculty-sneha-deshmukh"
+                            >
                             <div>
                                 <h3>Prof. Sneha Deshmukh</h3>
                                 <span class="faculty-role">Senior Mathematics Faculty</span>
@@ -366,7 +389,12 @@
                 <div class="toppers-grid">
                     <div class="topper-card">
                         <div class="topper-header">
-                            <div class="topper-avatar"><i class="fa-solid fa-trophy"></i></div>
+                            <img
+                                src="images/topper-akash-kulkarni.jpg"
+                                alt="Akash Kulkarni, SSC CGL 2025 topper, selected as Income Tax Inspector"
+                                class="topper-photo"
+                                data-placeholder-id="topper-akash-kulkarni"
+                            >
                             <div class="topper-info">
                                 <h3>Akash Kulkarni</h3>
                                 <span class="topper-post">Income Tax Inspector (2025)</span>
@@ -379,7 +407,12 @@
 
                     <div class="topper-card">
                         <div class="topper-header">
-                            <div class="topper-avatar"><i class="fa-solid fa-trophy"></i></div>
+                            <img
+                                src="images/topper-pooja-patil.jpg"
+                                alt="Pooja Patil, MPSC State Services topper, selected as Deputy Collector"
+                                class="topper-photo"
+                                data-placeholder-id="topper-pooja-patil"
+                            >
                             <div class="topper-info">
                                 <h3>Pooja Patil</h3>
                                 <span class="topper-post">Dy. Collector Class 1 (2025)</span>
@@ -454,6 +487,7 @@
                     <button class="btn-hero-primary" onclick="openEnquiryModal()">
                         <i class="fa-solid fa-paper-plane"></i> Enquire Now
                     </button>
+                    <!-- BUSINESS CONTACT — must match BUSINESS_CONFIG in script.js -->
                     <a href="tel:9067257872" class="btn-hero-outline">
                         <i class="fa-solid fa-phone"></i> Call 9067257872
                     </a>
@@ -472,6 +506,7 @@
             <div class="footer-info-group">
                 <p><i class="fa-solid fa-location-dot"></i> <strong>Academy Address:</strong> 201, Shree Plaza, Station Road, Kolhapur, Maharashtra 416003</p>
                 <p><i class="fa-solid fa-map-pin"></i> <strong>Service Areas:</strong> Kolhapur, Ichalkaranji, Sangli, Satara</p>
+                <!-- BUSINESS CONTACT — must match BUSINESS_CONFIG in script.js -->
                 <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> 9067257872 | <strong>WhatsApp:</strong> +918329931123</p>
                 <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> info@successacademy.in</p>
             </div>
